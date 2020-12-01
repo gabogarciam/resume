@@ -24,7 +24,7 @@ class Contact extends Component {
                             </div>
                             <div className='email logo'>
                                 <li><img src={emailLogo} alt="email logo" /></li>
-                                <li><a href={ResumeData.basics.email}>{ResumeData.basics.email}</a></li>
+                                <li><a href={'mailto:'+ResumeData.basics.email}>{ResumeData.basics.email}</a></li>
                             </div>
                             <div className='website  logo'>
                                 <li><img src={websiteLogo} alt="website logo" /></li>
