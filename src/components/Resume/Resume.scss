@@ -1,0 +1,82 @@
+.container__resume {
+    margin: auto;
+    width: 800px;
+    display: flex;
+}
+
+.resume__basics {
+    width: 40%;
+    background: #6096ba;
+    text-align: center;
+    color: #fff;
+}
+
+.resume__body {
+    width: 80%;
+    background: #edf2f4;
+    padding: 50px;
+    text-align: justify;
+}
+
+.image__profile {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 20px auto;
+}
+
+.image__profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile__name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height : 30px;
+}
+
+.profile__label {
+    margin-top: 10px;
+}
+
+.experience__ h3 {
+    margin-top: 30px;
+}
+
+.work__experience, .education__experience {
+    padding-top: 20px;
+}
+
+a {
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    body {
+        background-color: #6096ba;
+    }
+
+    .container__resume {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .resume__basics {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .resume__body {
+        width: auto;
+        padding: 20px;
+    }
+
+    .resume__experience {
+        background-color: transparent;
+    }
+}
+

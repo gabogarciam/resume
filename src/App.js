@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
+import './App.scss';
 
-import Hello from './components/Hello/Hello';
+import Resume from './components/Resume/Resume';
 
 
 class App extends React.Component {
     render() {
         return(
-            <Hello />
+            <Resume />
         )
     }
 }
