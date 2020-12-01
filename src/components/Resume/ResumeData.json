@@ -11,7 +11,7 @@
       "address": "Calle Padilla 175",
       "postalCode": "08013",
       "city": "Barcelona",
-      "countryCode": "ES",
+      "country": "Spain",
       "region": "Catalunya"
     },
     "profiles": [
@@ -29,7 +29,7 @@
   },
   "work": [
     {
-      "company": "marfeel",
+      "company": "Marfeel",
       "position": "Front-End Developer",
       "website": "https://www.marfeel.com/",
       "startDate": "2018-11-10",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "company": "tiendaofertas.com",
+      "company": "Tiendaofertas.com",
       "position": "Junior Web Developer",
       "website": "https://tiendaofertas.com",
       "startDate": "2004-01-20",
@@ -118,8 +118,66 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "React.js",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "JavaScript / Node.js",
+      "level": "Intermediate",
+      "keywords": [
+        "NodeJS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Express.js",
+      "level": "Intermediate",
+      "keywords": [
+        "Express.js",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Databases SQL && NoSQL",
+      "level": "Intermediate",
+      "keywords": [
+        "SQL",
+        "NoSQL",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "ESLint / Prettier / HTML / CSS / SASS",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "SASS"
+      ]
+    },
+    {
+      "name": "Git && GitHub version control",
+      "level": "Intermediate",
+      "keywords": [
+        "Git",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Jest / Jasmine / Webpack / Babel",
+      "level": "Intermediate",
       "keywords": [
         "HTML",
         "CSS",

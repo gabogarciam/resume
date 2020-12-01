@@ -16,7 +16,7 @@ class Contact extends Component {
                         <ul>
                             <div className='location  logo'>
                                 <li><img src={ubicationLogo} alt="map logo" /></li>
-                                <li>{ResumeData.basics.location.city}</li>
+                                <li>{ResumeData.basics.location.city+', '+ResumeData.basics.location.country}</li>
                             </div>
                             <div className='phone  logo'>
                                 <li><img src={phoneLogo} alt="phone logo" /></li>

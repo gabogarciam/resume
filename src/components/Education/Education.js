@@ -9,9 +9,11 @@ class Education extends Component {
                 {ResumeData.education.map((item, index) => {
                     return (
                         <ul className='education__experience' key={index}>
+                            <div className='date'>
+                                <li>{item.startDate}</li>
+                                <li>{item.endDate}</li>
+                            </div>
                             <li>{item.institution}</li>
-                            <li>{item.startDate}</li>
-                            <li>{item.endDate}</li>
                             <li>{item.area}</li>
                         </ul>
                     )

@@ -1,0 +1,21 @@
+.date {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.date li:last-child::before {
+    content: "";
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #0bb5f4;
+    margin-right: 10px;
+}
+
+.date li:last-child {
+    margin-left: 10px;
+}

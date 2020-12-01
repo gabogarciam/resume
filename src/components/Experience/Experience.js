@@ -10,10 +10,12 @@ class Experience extends Component {
                 {ResumeData.work.map((item, index) => {
                     return (
                         <ul className='work__experience' key={index}>
+                            <div className='date'>
+                                <li>{item.startDate}</li>
+                                <li>{item.endDate}</li>
+                            </div>
                             <li>{item.company}</li>
                             <li>{item.position}</li>
-                            <li>{item.startDate}</li>
-                            <li>{item.endDate}</li>
                             <li>{item.summary}</li>
                         </ul>
                     )

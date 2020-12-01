@@ -5,10 +5,14 @@
 }
 
 .resume__basics {
-    width: 40%;
+    width: 45%;
     background: #6096ba;
     text-align: center;
     color: #fff;
+}
+
+.resume__basics h2 {
+    margin-bottom: 20px;
 }
 
 .resume__body {
@@ -16,6 +20,10 @@
     background: #edf2f4;
     padding: 50px;
     text-align: justify;
+}
+
+.resume__summary {
+    font-size: 1.2rem;
 }
 
 .image__profile {
@@ -40,6 +48,11 @@
 
 .profile__label {
     margin-top: 10px;
+}
+
+h3 {
+    border-bottom: 5px solid #6096ba;
+    border-bottom-style: dashed;
 }
 
 .experience__ h3 {

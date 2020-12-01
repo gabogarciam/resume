@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import ResumeData from './ResumeData.json'
 import './Resume.scss'
 
-import ImageProfile from './image__profile.jpg';
+import ImageProfile from '../../../public/image__profile.jpg';
+import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
 import Languages from '../Languages/Languages'
 import Experience from '../Experience/Experience'
@@ -20,11 +21,14 @@ class Resume extends Component {
                         <p className="profile__name">{ResumeData.basics.name}</p>
                         <p className="profile__label">{ResumeData.basics.label}</p>
                     </div>
+                    <Skills />
                     <Languages />
                     <Contact />
                 </div>
                 <div className='resume__body'>
-                    <div className='resume__summary'>{ResumeData.basics.summary}</div>
+                    <div className='resume__summary'>
+                        {ResumeData.basics.summary}
+                    </div>
                     <div className='experience__'>
                         <Experience />
                         <Education />
