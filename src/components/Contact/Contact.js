@@ -53,7 +53,9 @@ const Contact = () => {
                 />
               </li>
               <li>
-                <a href={item.url}>{item.username}</a>
+                <a target="_blank" rel="noreferrer" href={item.url}>
+                  {item.username}
+                </a>
               </li>
             </div>
           );
