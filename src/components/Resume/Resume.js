@@ -3,6 +3,7 @@ import React from 'react';
 import ResumeData from './ResumeData.json';
 import './Resume.scss';
 
+import ImageProfile from '../../../public/image_profile.jpg';
 import Skills from '../Skills/Skills';
 import Languages from '../Languages/Languages';
 import Contact from '../Contact/Contact';
@@ -14,7 +15,7 @@ const Resume = () => {
     <div className="container__resume">
       <div className="resume__basics">
         <div className="image__profile">
-          <img src={ResumeData.basics.picture} alt="Avatar Profile" />
+          <img src={ImageProfile} alt="Avatar Profile" />
         </div>
         <div className="__title">
           <p className="profile__name">{ResumeData.basics.name}</p>
