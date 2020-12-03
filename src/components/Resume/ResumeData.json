@@ -2,7 +2,7 @@
   "basics": {
     "name": "José Gabriel García Muñoz",
     "label": "Full Stack Developer",
-    "picture": "../../../public/image__profile.jpg",
+    "picture": "public/image_profile.jpg",
     "email": "gabogarciam71@gmail.com",
     "phone": "(+34) 677178232",
     "website": "https://gabogarciam.github.io/resume/",
