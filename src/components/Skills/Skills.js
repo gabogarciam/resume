@@ -5,14 +5,14 @@ import './Skills.scss';
 
 const Skills = () => {
   return (
-    <div className="__skills">
+    <section className="resume__skills basics">
       <h2>Skills</h2>
       <ul>
-        {ResumeData.skills.map((item, index) => {
-          return <li key={index}>{item.name}</li>;
+        {ResumeData.skills.map((item) => {
+          return <li key={item.name}>{item.name}</li>;
         })}
       </ul>
-    </div>
+    </section>
   );
 };
 

@@ -5,17 +5,17 @@ import './Languages.scss';
 
 const Languages = () => {
   return (
-    <div className="__languages">
+    <section className="resume__languages basics">
       <h2>Languages</h2>
-      {ResumeData.languages.map((item, index) => {
+      {ResumeData.languages.map((item) => {
         return (
-          <ul key={index}>
+          <ul key={item.language}>
             <li>{item.language}</li>
             <li className="__fluency">({item.fluency})</li>
           </ul>
         );
       })}
-    </div>
+    </section>
   );
 };
 

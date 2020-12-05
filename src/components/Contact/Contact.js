@@ -12,7 +12,7 @@ import linkedinLogo from '../../../public/linkedin.svg';
 
 const Contact = () => {
   return (
-    <div className="__contact">
+    <section className="__contact basics">
       <h2>Contact</h2>
       <ul>
         <div className="location  logo">
@@ -25,7 +25,9 @@ const Contact = () => {
           <li>
             <img src={phoneLogo} alt="phone logo" />
           </li>
-          <li>{ResumeData.basics.phone}</li>
+          <li>
+            <a href={`tel:${ResumeData.basics.phone}`}>{ResumeData.basics.phone}</a>
+          </li>
         </div>
         <div className="email logo">
           <li>
@@ -43,9 +45,9 @@ const Contact = () => {
             <a href={ResumeData.basics.website}>https://gabogarciam.com</a>
           </li>
         </div>
-        {ResumeData.basics.profiles.map((item, index) => {
+        {ResumeData.basics.profiles.map((item) => {
           return (
-            <div className={`${item.network} logo`} key={index}>
+            <div className={`${item.network} logo`} key={item.network}>
               <li>
                 <img
                   src={item.network === 'github' ? githubLogo : linkedinLogo}
@@ -61,7 +63,7 @@ const Contact = () => {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 };
 

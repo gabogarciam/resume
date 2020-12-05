@@ -4,13 +4,8 @@ import './App.scss';
 
 import Resume from './components/Resume/Resume';
 
-
-class App extends React.Component {
-    render() {
-        return(
-            <Resume />
-        )
-    }
-}
+const App = () => {
+  return <Resume />;
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));

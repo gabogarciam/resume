@@ -14,7 +14,7 @@ const Experience = () => {
               <li>{item.startDate}</li>
               <li>{item.endDate}</li>
             </div>
-            <li>{item.company}</li>
+            <li className="company">{item.company}</li>
             <li>{item.position}</li>
             <li>{item.summary}</li>
           </ul>

@@ -1,81 +1,59 @@
+@import '../../variables';
+
 .container__resume {
     margin: auto;
     width: 800px;
     display: flex;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .resume__basics {
-    width: 45%;
-    background: #6096ba;
+    background: $main-color;
     text-align: center;
-    color: #fff;
+    color: $--white;
+}
+
+.resume__basics .basics {
+    text-align: justify;
+    padding: 15px 0 0 20px;
 }
 
 .resume__basics h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.resume__body {
+.resume__main {
     width: 80%;
-    background: #edf2f4;
-    padding: 50px;
+    background: $--white;
+    padding: 50px 50px 30px 50px;
     text-align: justify;
 }
 
-.resume__summary {
-    font-size: 1.2rem;
-}
-
-.image__profile {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto 20px auto;
-}
-
-.image__profile img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.profile__name {
-    font-weight: 700;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    padding: 0 10px;
-    line-height : 30px;
-}
-
-.profile__label {
-    margin-top: 10px;
-}
-
-h3 {
-    border-bottom: 5px solid #6096ba;
-    border-bottom-style: dashed;
-}
-
-.experience__ h3 {
+.resume__main h3 {
     margin-top: 30px;
+    border-bottom: 5px solid $main-color;
+    text-transform: uppercase;
 }
 
 .work__experience, .education__experience {
-    padding-top: 10px;
+    margin: 17px 0;
+    border-bottom: 0.5px solid $main-color;
 }
 
 a {
-    color: #fff;
+    color: $--white;
 }
 
 @media only screen and (max-width: 991px) {
     body {
-        background-color: #6096ba;
+        background-color: $mobile-main-color;
     }
 
     .container__resume {
         display: block;
         width: auto;
         height: auto;
+        box-shadow: none;
     }
 
     .resume__basics {
@@ -83,9 +61,10 @@ a {
         background-color: transparent;
     }
 
-    .resume__body {
+    .resume__main {
         width: auto;
         padding: 20px;
+        margin-top: 50px;
     }
 
     .resume__experience {
