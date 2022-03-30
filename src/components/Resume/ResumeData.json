@@ -29,6 +29,17 @@
   },
   "work": [
     {
+      "company": "eDreams ODIGEO",
+      "position": "Full Stack Developer",
+      "website": "https://www.edreamsodigeo.com",
+      "startDate": "2021-03-21",
+      "endDate": "Present",
+      "summary": "Solving technical problems equally well with OO, DOM oriented, or functional JS, understanding web technology stack using tools like Typescript, ES6, Jasmine, JSON Schemas, SASS, JSP",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
       "company": "Marfeel",
       "position": "Front-End Developer",
       "website": "https://www.marfeel.com/",
@@ -46,17 +57,6 @@
       "startDate": "2010-04-20",
       "endDate": "2017-10-30",
       "summary": "Helpdesk for banks products.",
-      "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "company": "Tiendaofertas.com",
-      "position": "Junior Web Developer",
-      "website": "https://tiendaofertas.com",
-      "startDate": "2004-01-20",
-      "endDate": "2007-11-30",
-      "summary": "Development and maintence of new features of the web user interface in PHP, HTML and CSS.",
       "highlights": [
         "Started the company"
       ]
