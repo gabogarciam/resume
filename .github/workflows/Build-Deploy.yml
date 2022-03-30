@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Install and Build 🔧  ${{ matrix.node-version }}
-      run: npm ci && npm run build
+      run: npm install && npm run build
     #- run: npm test
 
     - name: Deploy 🚀
