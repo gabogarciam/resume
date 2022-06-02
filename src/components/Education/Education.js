@@ -1,12 +1,10 @@
 import React from 'react';
 
-import ResumeData from '../Resume/ResumeData.json';
-
-const Education = () => {
+const Education = ({education}) => {
   return (
     <div className="experience__education">
       <h3>Education</h3>
-      {ResumeData.education.map((item) => {
+      {education.map((item) => {
         return (
           <ul className="education__experience" key={item.institution}>
             <div className="date">

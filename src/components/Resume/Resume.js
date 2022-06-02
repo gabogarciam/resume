@@ -11,20 +11,24 @@ import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Education from '../Education/Education';
 
+import { Data as dataSchema } from "../../schemas/Data";
+
 const Resume = () => {
+  const { basics, skills, languages, aboutMe, experience } = dataSchema;
+  
   return (
     <div className="container__resume">
       <aside className="resume__basics">
         <Avatar />
-        <Profile />
-        <Skills />
-        <Languages />
-        <Contact />
+        <Profile {...basics}/>
+        <Skills {...skills}/>
+        <Languages {...languages}/>
+        <Contact {...basics}/>
       </aside>
       <div className="resume__main">
-        <About />
-        <Experience />
-        <Education />
+        <About {...aboutMe}/>
+        <Experience {...experience}/>
+        <Education {...experience}/>
       </div>
     </div>
   );

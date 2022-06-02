@@ -15,17 +15,17 @@
 
 .resume__basics .basics {
     text-align: justify;
-    padding: 15px 0 0 20px;
+    padding: 15px 15px 0 20px;
 }
 
 .resume__basics h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .resume__main {
-    width: 80%;
+    width: 100%;
     background: $--white;
-    padding: 50px 50px 30px 50px;
+    padding: 30px;
     text-align: justify;
 }
 
@@ -42,6 +42,10 @@
 
 a {
     color: $--white;
+}
+
+li {
+    margin-bottom: 6px;
 }
 
 @media only screen and (max-width: 991px) {

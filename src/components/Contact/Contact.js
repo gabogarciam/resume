@@ -1,6 +1,4 @@
 import React from 'react';
-
-import ResumeData from '../Resume/ResumeData.json';
 import './Contact.scss';
 
 import emailLogo from '../../../public/email.svg';
@@ -10,56 +8,56 @@ import ubicationLogo from '../../../public/ubicacion.svg';
 import githubLogo from '../../../public/github.svg';
 import linkedinLogo from '../../../public/linkedin.svg';
 
-const Contact = () => {
+const Contact = ({email, phone, website, location, profiles}) => {
   return (
     <section className="__contact basics">
       <h2>Contact</h2>
       <ul>
-        <div className="location  logo">
-          <li>
+        <li className="location  logo">
+          <div>
             <img src={ubicationLogo} alt="map logo" />
-          </li>
-          <li>{`${ResumeData.basics.location.city}, ${ResumeData.basics.location.country}`}</li>
-        </div>
-        <div className="phone  logo">
-          <li>
+          </div>
+          <div>{`${location.city}, ${location.country}`}</div>
+        </li>
+        <li className="phone  logo">
+          <div>
             <img src={phoneLogo} alt="phone logo" />
-          </li>
-          <li>
-            <a href={`tel:${ResumeData.basics.phone}`}>{ResumeData.basics.phone}</a>
-          </li>
-        </div>
-        <div className="email logo">
-          <li>
+          </div>
+          <div>
+            <a href={`tel:${phone}`}>{phone}</a>
+          </div>
+        </li>
+        <li className="email logo">
+          <div>
             <img src={emailLogo} alt="email logo" />
-          </li>
-          <li>
-            <a href={`mailto:${ResumeData.basics.email}`}>{ResumeData.basics.email}</a>
-          </li>
-        </div>
-        <div className="website  logo">
-          <li>
+          </div>
+          <div>
+            <a href={`mailto:${email}`}>{email}</a>
+          </div>
+        </li>
+        <li className="website  logo">
+          <div>
             <img src={websiteLogo} alt="website logo" />
-          </li>
-          <li>
-            <a href={ResumeData.basics.website}>https://gabogarciam.com</a>
-          </li>
-        </div>
-        {ResumeData.basics.profiles.map((item) => {
+          </div>
+          <div>
+            <a href={website}>gabogarciam.dev</a>
+          </div>
+        </li>
+        {profiles.map((item) => {
           return (
-            <div className={`${item.network} logo`} key={item.network}>
-              <li>
+            <li className={`${item.network} logo`} key={item.network}>
+              <div>
                 <img
                   src={item.network === 'github' ? githubLogo : linkedinLogo}
                   alt={`${item.network}logo`}
                 />
-              </li>
-              <li>
+              </div>
+              <div>
                 <a target="_blank" rel="noreferrer" href={item.url}>
                   {item.username}
                 </a>
-              </li>
-            </div>
+              </div>
+            </li>
           );
         })}
       </ul>

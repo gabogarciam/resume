@@ -1,13 +1,11 @@
 import React from 'react';
-
-import ResumeData from '../Resume/ResumeData.json';
 import './Languages.scss';
 
-const Languages = () => {
+const Languages = ({tongues}) => {
   return (
     <section className="resume__languages basics">
       <h2>Languages</h2>
-      {ResumeData.languages.map((item) => {
+      {tongues.map((item) => {
         return (
           <ul key={item.language}>
             <li>{item.language}</li>

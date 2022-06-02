@@ -1,12 +1,10 @@
 import React from 'react';
-
 import './About.scss';
-import ResumeData from '../Resume/ResumeData.json';
 
-const About = () => {
+const About = ({description}) => {
   return (
     <section className="resume__about">
-      <div className="resume__summary">{ResumeData.basics.summary}</div>
+      <div className="resume__summary">{description}</div>
     </section>
   );
 };
