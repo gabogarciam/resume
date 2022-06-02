@@ -40,7 +40,7 @@ const Contact = ({email, phone, website, location, profiles}) => {
             <img src={websiteLogo} alt="website logo" />
           </div>
           <div>
-            <a href={website}>https://gabogarciam.com</a>
+            <a href={website}>gabogarciam.dev</a>
           </div>
         </li>
         {profiles.map((item) => {

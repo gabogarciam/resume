@@ -29,7 +29,9 @@ export const Data = {
   aboutMe: {
     label: "Perfil",
     description:
-      "I am a FrontEnd developer and graduated at Ironhack in Barcelona. I have experience with React JS, Typescript, JavaScript, Webpack. I am also Information System Technologist and passionate about the new technologies, versatile and dynamic, leader, proactive, eager to learn, identify and solve the different problems and needs to meet demand.",
+      "Programmer Analyst, graduated at Universit in Colombia and also Ironhack in Barcelona. I have experience develop computer and web applications in various technologies with JavaScript, Typescript, applying agile development methodologies, including identification of needs and system designs based on development models.",
+    description_2:
+      "Programmer Analyst, graduated at UniversitIronhack in Barcelona. I have experience with JavaScript, Typescript, Nodejs, React, Webpack. I am also Information System Technologist and passionate about the new technologies, versatile and dynamic, leader, proactive, eager to learn, identify and solve the different problems and needs to meet demand."
   },
   experience: {
     works: [
@@ -39,7 +41,7 @@ export const Data = {
         website: "https://www.edreamsodigeo.com",
         startDate: "2021-03-21",
         endDate: "Present",
-        summary: "Solving technical problems equally well with OO, DOM oriented, or functional JS, understanding web technology stack using tools like Typescript, ES6, Jasmine, JSON Schemas, SASS, JSP",
+        summary: "Development of REST Web Services in Nodejs(JS/TS), CI/CD Pipeline with Bitbucket, Jenkins and GCP as infrastructure.",
         highlights: [
           "Started the company"
         ]
@@ -166,7 +168,7 @@ export const Data = {
         ]
       },
       {
-        name: "ESLint / Prettier / HTML / CSS / SASS",
+        name: "HTML / CSS / Sass",
         level: "Intermediate",
         keywords: [
           "HTML",
@@ -175,11 +177,12 @@ export const Data = {
         ]
       },
       {
-        name: "Git",
+        name: "ESLint / Prettier",
         level: "Intermediate",
         keywords: [
-          "Git",
-          "Javascript"
+          "HTML",
+          "CSS",
+          "SASS"
         ]
       },
       {
@@ -188,6 +191,14 @@ export const Data = {
         keywords: [
           "HTML",
           "CSS",
+          "Javascript"
+        ]
+      },
+      {
+        name: "Git",
+        level: "Intermediate",
+        keywords: [
+          "Git",
           "Javascript"
         ]
       }

@@ -8,12 +8,12 @@ const Experience = ({works}) => {
       {works.map((item, index) => {
         return (
           <ul className="work__experience" key={index}>
+            <li>{item.position}</li>
+            <li className="company">{item.company}</li>
             <div className="date">
               <li>{item.startDate}</li>
               <li>{item.endDate}</li>
             </div>
-            <li className="company">{item.company}</li>
-            <li>{item.position}</li>
             <li>{item.summary}</li>
           </ul>
         );
