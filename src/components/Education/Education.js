@@ -1,4 +1,5 @@
 import React from 'react';
+import './Education.scss';
 
 const Education = ({education}) => {
   return (
@@ -7,12 +8,12 @@ const Education = ({education}) => {
       {education.map((item) => {
         return (
           <ul className="education__experience" key={item.institution}>
+            <li>{item.area}</li>
+            <li className='institution'>{item.institution}</li>
             <div className="date">
               <li>{item.startDate}</li>
               <li>{item.endDate}</li>
             </div>
-            <li>{item.institution}</li>
-            <li>{item.area}</li>
           </ul>
         );
       })}
