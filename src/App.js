@@ -1,11 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import Resume from './components/Resume/Resume';
 import './App.scss';
 
-import Resume from './components/Resume/Resume';
-
-const App = () => {
-  return <Resume />;
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<Resume />);
