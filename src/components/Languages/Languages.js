@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Languages.scss';
 
-const Languages = ({tongues}) => {
+const Languages = ({ tongues }) => {
   return (
     <section className="resume__languages basics">
       <h2>Languages</h2>
@@ -15,6 +16,10 @@ const Languages = ({tongues}) => {
       })}
     </section>
   );
+};
+
+Languages.propTypes = {
+  tongues: PropTypes.array.isRequired,
 };
 
 export default Languages;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Contact.scss';
 
 import emailLogo from '../../../public/email.svg';
@@ -8,7 +9,7 @@ import ubicationLogo from '../../../public/ubicacion.svg';
 import githubLogo from '../../../public/github.svg';
 import linkedinLogo from '../../../public/linkedin.svg';
 
-const Contact = ({email, phone, website, location, profiles}) => {
+const Contact = ({ email, phone, website, location, profiles }) => {
   return (
     <section className="__contact basics">
       <h2>Contact</h2>
@@ -63,6 +64,14 @@ const Contact = ({email, phone, website, location, profiles}) => {
       </ul>
     </section>
   );
+};
+
+Contact.propTypes = {
+  email: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+  website: PropTypes.string,
+  location: PropTypes.object.isRequired,
+  profiles: PropTypes.array,
 };
 
 export default Contact;
