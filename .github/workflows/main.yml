@@ -49,7 +49,7 @@ jobs:
       #  run: npm test
 
   deploy:
-    needs: [setup, lint, build, test]
+    needs: [setup, lint, build]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy 🚀
