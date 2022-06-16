@@ -21,13 +21,14 @@ jobs:
       - name: Setup Node.js ${{ matrix.node-version }} 👷🏽
         uses: actions/setup-node@v3
         with:
+          cache: 'npm'
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies 💊
         run: npm ci
 
-      - name: Lint
-        run: npm run lint 💄
+      - name: Lint 💄
+        run: npm run lint
 
       - name: Build 🛠
         run: npm run build --if-present
