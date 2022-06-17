@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  setup:
+  build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple
     runs-on: ubuntu-latest
     strategy:
@@ -27,31 +27,15 @@ jobs:
       - name: Install dependencies 💊
         run: npm ci
 
-  lint:
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
       - name: Lint 💄
         run: npm run lint
-  
-  build:
-    needs: [setup, lint]
-    runs-on: ubuntu-latest
-    steps:
+
       - name: Build 🛠
         run: npm run build --if-present
 
-  #test:
-    #needs: [setup, lint, build]
-    #runs-on: ubuntu-latest
-    #steps:
       #- name: test 🧪
       #  run: npm test
 
-  deploy:
-    needs: [setup, lint, build]
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
