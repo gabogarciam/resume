@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImageProfile from '../../../public/image_profile.jpg';
+import ImageProfile from '../../../public/image_profile.webp';
 import './Avatar.scss';
 
 const Avatar = () => {
