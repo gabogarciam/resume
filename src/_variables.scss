@@ -1,3 +1,52 @@
-$main-color: #9db4c0;
-$mobile-main-color: #6096ba;
-$--white: #fff;
+:root {
+    --header-height: 3rem;
+  
+    --title-color: #434c5e;
+    --text-color: #4c566a;
+    --text-color-light: #7b88a1;
+    --container-color: #ffffff;
+    --container-color-alt: #f7f9fb;
+    --body-color: #f2f4f8;
+    --container-basics: #d3dbeb;
+  
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 3.5rem;
+  
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    --mobile-main-color: #6096ba;
+}
+
+@supports (-moz-appearance:none) {
+    .date li:last-child::before { 
+        border: .10rem solid var(--text-color);
+     }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    .date li:last-child::before { 
+        border: 1px solid var(--text-color);
+    }
+}
+
+@media not all and (min-resolution:.001dpcm){
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        .date li:last-child::before { 
+            border: 1px solid var(--text-color);
+        }
+    }
+}

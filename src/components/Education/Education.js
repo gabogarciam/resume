@@ -9,11 +9,17 @@ const Education = ({ education }) => {
       {education.map((item) => {
         return (
           <ul className="education__experience" key={item.institution}>
-            <li>{item.area}</li>
-            <li className="institution">{item.institution}</li>
-            <div className="date">
-              <li>{item.startDate}</li>
-              <li>{item.endDate}</li>
+            <div className="experience__time">
+              <span className="__rounder"></span>
+              <span className="__line"></span>
+            </div>
+            <div className="experience__data bd-grid">
+              <li>{item.area}</li>
+              <li className="institution">{item.institution}</li>
+              <div className="date">
+                <li>{item.startDate}</li>
+                <li>{item.endDate}</li>
+              </div>
             </div>
           </ul>
         );
