@@ -15,8 +15,8 @@ const Resume = () => {
   const { basics, skills, languages, aboutMe, experience } = dataSchema;
 
   return (
-    <div className="container__resume">
-      <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className="loader">Loading...</div>}>
+      <div className="container__resume">
         <aside className="resume__basics">
           <Avatar />
           <Profile {...basics} />
@@ -29,8 +29,8 @@ const Resume = () => {
           <Experience {...experience} />
           <Education {...experience} />
         </div>
-      </Suspense>
-    </div>
+      </div>
+    </Suspense>
   );
 };
 
