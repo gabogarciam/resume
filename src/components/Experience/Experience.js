@@ -9,13 +9,19 @@ const Experience = ({ works }) => {
       {works.map((item, index) => {
         return (
           <ul className="work__experience" key={index}>
-            <li>{item.position}</li>
-            <li className="company">{item.company}</li>
-            <div className="date">
-              <li>{item.startDate}</li>
-              <li>{item.endDate}</li>
+            <div className="experience__time">
+              <span className="__rounder"></span>
+              <span className="__line"></span>
             </div>
-            <li>{item.summary}</li>
+            <div className="experience__data bd-grid">
+              <li className="position">{item.position}</li>
+              <li className="company">{item.company}</li>
+              <div className="date">
+                <li>{item.startDate}</li>
+                <li>{item.endDate}</li>
+              </div>
+              <li>{item.summary}</li>
+            </div>
           </ul>
         );
       })}

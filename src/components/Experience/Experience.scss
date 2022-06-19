@@ -1,22 +1,5 @@
 @import '../../variables';
 
-.date {
-    display: flex;
-}
-
-.date li:last-child::before {
-    content: "";
-    top: 5px;
-    width: 6px;
-    height: 6px;
-    border: 1px solid $main-color;
-    margin-right: 10px;
-}
-
-.date li:last-child {
-    margin-left: 10px;
-}
-
 .company {
     text-transform: uppercase;
     font-weight: 700;
