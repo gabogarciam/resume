@@ -16,13 +16,90 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body,  .light {
     margin: 0 0 var(--header-height) 0;
+    height: 100vh;
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    background: #f9fafb;
     color: var(--text-color);
+    transition: background-color .5s;
+
+    .resume__basics {
+        background-color: var(--container-basics);
+    }
+}
+
+.resume__summary {
+    font-size: 1.2rem;
+}
+
+.dark {
+    background: #242933;
+    color: var(--container-color-alt);
+
+    .container__resume {
+        box-shadow: 1px 1px 3px 0px black;
+    }
+
+    .resume__basics {
+        background-color: #3b4252;
+    }
+
+    .button-theme {
+        border: .2px solid #8f8a8a;
+    }
+
+    .sun {
+        background-color: #444444;
+
+        svg {
+            color: white;
+        }
+    }
+
+    .resume__main {
+        background-color: #242933;
+    }
+
+    a {
+        color: var(--container-color-alt);
+    }
+}
+
+.button-theme {
+    float: right;
+    margin: .5rem;
+    border-radius: .5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0 solid #eaeaea;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .15s;
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+.sun:hover {
+    border: 2.5px solid #837f7f;
+}
+
+.moon:hover {
+    border: 2.5px solid #837f7f;
+}
+
+::selection {
+    background-color: #47a3f3;
+    color: #fefefe;
 }
 
 .experience__education {
