@@ -1,9 +1,9 @@
 @import '../../variables';
 
 .container__resume {
-    margin: auto;
-    width: 800px;
     display: flex;
+    margin: auto;
+    width: 50rem;
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
@@ -20,19 +20,15 @@ h2 {
     margin-bottom: 10px;
 }
 
-.resume__basics {
-    background-color: var(--container-basics);
-}
-
 .resume__main {
     width: 100%;
     background: var(--container-color);
-    padding: 30px;
+    padding: 3.1rem 1.8rem 1.8rem;
     text-align: justify;
 }
 
 h3 {
-    margin-top: 30px;
+    margin-top: 1.8rem;
     text-transform: uppercase;
 }
 
@@ -96,8 +92,7 @@ li {
         width: auto;
         height: 100%;
         overflow: auto;
-        padding: 20px;
-        margin-top: 50px;
+        padding: 30px;
         background-color: transparent;
     }
 
