@@ -3,6 +3,7 @@ import dataSchema from '../../schemas/Data';
 import './Resume.scss';
 
 const Resume = () => {
+  const Toggle = React.lazy(() => import('../Toggle'));
   const Avatar = React.lazy(() => import('../Avatar/Avatar'));
   const Profile = React.lazy(() => import('../Profile/Profile'));
   const Skills = React.lazy(() => import('../Skills/Skills'));
@@ -18,6 +19,7 @@ const Resume = () => {
     <Suspense fallback={<div className="loader">Loading...</div>}>
       <div className="container__resume">
         <aside className="resume__basics">
+          <Toggle />
           <Avatar />
           <Profile {...basics} />
           <Skills {...skills} />

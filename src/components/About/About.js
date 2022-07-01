@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './About.scss';
 
 const About = ({ description }) => {
   return (
