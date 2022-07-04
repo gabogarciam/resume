@@ -1,5 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image_Map from '../../public/ubicacion.svg';
+import Image_Phone from '../../public/phone.svg';
+import Image_Email from '../../public/email.svg';
+import Image_Website from '../../public/website.svg';
+import Image_GitHub from '../../public/github.svg';
+import Image_linkedin from '../../public/linkedin.svg';
 
 const Contact = ({ email, phone, website, location, profiles }) => {
   return (
@@ -8,13 +14,13 @@ const Contact = ({ email, phone, website, location, profiles }) => {
       <ul>
         <li className="location  logo">
           <div>
-            <img src={location.img} alt="map logo" />
+            <img src={Image_Map} alt="map logo" />
           </div>
           <div>{`${location.city}, ${location.country}`}</div>
         </li>
         <li className="phone  logo">
           <div>
-            <img src={phone.img} alt={phone.alt} />
+            <img src={Image_Phone} alt={phone.alt} />
           </div>
           <div>
             <a href={`tel:${phone.number}`}>{phone.number}</a>
@@ -22,7 +28,7 @@ const Contact = ({ email, phone, website, location, profiles }) => {
         </li>
         <li className="email logo">
           <div>
-            <img src={email.img} alt={email.alt} />
+            <img src={Image_Email} alt={email.alt} />
           </div>
           <div>
             <a href={`mailto:${email.mail}`}>{email.mail}</a>
@@ -30,7 +36,7 @@ const Contact = ({ email, phone, website, location, profiles }) => {
         </li>
         <li className="website  logo">
           <div>
-            <img src={website.img} alt={website.alt} />
+            <img src={Image_Website} alt={website.alt} />
           </div>
           <div>
             <a href={website.url}>{website.name}</a>
@@ -40,7 +46,10 @@ const Contact = ({ email, phone, website, location, profiles }) => {
           return (
             <li className={`${item.network} logo`} key={item.network}>
               <div>
-                <img src={item.img} alt={item.alt} />
+                <img
+                  src={item.network == 'github' ? Image_GitHub : Image_linkedin}
+                  alt={item.alt}
+                />
               </div>
               <div>
                 <a target="_blank" rel="noreferrer" href={item.url}>
