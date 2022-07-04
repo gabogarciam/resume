@@ -2,27 +2,45 @@ const Data = {
   basics: {
     name: 'José Gabriel García Muñoz',
     label: 'Full Stack Developer',
-    picture: 'public/image_profile.jpg',
-    email: 'gabogarciam71@gmail.com',
-    phone: '(+34) 677178232',
-    website: 'https://gabogarciam.github.io/resume/',
+    picture: '../image_profile.webp',
+    email: {
+      mail: 'gabogarciam71@gmail.com',
+      img: '../email.svg',
+      alt: 'email_logo',
+    },
+    phone: {
+      number: '(+34) 677178232',
+      img: '../phone.svg',
+      alt: 'phone_logo',
+    },
+    website: {
+      url: 'https://gabogarciam.github.io/resume/',
+      img: '../website.svg',
+      alt: 'website_logo',
+      name: 'gabogarcia.dev',
+    },
     location: {
       address: 'Calle Padilla 175',
       postalCode: '08013',
       city: 'Barcelona',
       country: 'Spain',
       region: 'Catalunya',
+      img: '../ubicacion.svg',
     },
     profiles: [
       {
         network: 'github',
         username: 'gabogarciam',
         url: 'https://github.com/gabogarciam?tab=repositories',
+        img: '../github.svg',
+        alt: 'github_logo',
       },
       {
         network: 'linkedin',
         username: 'gabrielgarciamunoz',
         url: 'https://www.linkedin.com/in/jos%C3%A9-gabriel-garc%C3%ADa-mu%C3%B1oz-82390484/',
+        img: '../linkedin.svg',
+        alt: 'linkedin_logo',
       },
     ],
   },
@@ -137,6 +155,11 @@ const Data = {
         keywords: ['TypeScript'],
       },
       {
+        name: 'Jest / Jasmine / Webpack / Babel',
+        level: 'Intermediate',
+        keywords: ['HTML', 'CSS', 'Javascript'],
+      },
+      {
         name: 'Databases SQL && NoSQL',
         level: 'Intermediate',
         keywords: ['SQL', 'NoSQL', 'Javascript'],
@@ -150,11 +173,6 @@ const Data = {
         name: 'ESLint / Prettier',
         level: 'Intermediate',
         keywords: ['HTML', 'CSS', 'SASS'],
-      },
-      {
-        name: 'Jest / Jasmine / Webpack / Babel',
-        level: 'Intermediate',
-        keywords: ['HTML', 'CSS', 'Javascript'],
       },
       {
         name: 'Git',
