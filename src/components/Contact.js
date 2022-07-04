@@ -1,13 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Contact.scss';
-
-import emailLogo from '../../../public/email.svg';
-import phoneLogo from '../../../public/phone.svg';
-import websiteLogo from '../../../public/website.svg';
-import ubicationLogo from '../../../public/ubicacion.svg';
-import githubLogo from '../../../public/github.svg';
-import linkedinLogo from '../../../public/linkedin.svg';
 
 const Contact = ({ email, phone, website, location, profiles }) => {
   return (
@@ -16,42 +8,39 @@ const Contact = ({ email, phone, website, location, profiles }) => {
       <ul>
         <li className="location  logo">
           <div>
-            <img src={ubicationLogo} alt="map logo" />
+            <img src={location.img} alt="map logo" />
           </div>
           <div>{`${location.city}, ${location.country}`}</div>
         </li>
         <li className="phone  logo">
           <div>
-            <img src={phoneLogo} alt="phone logo" />
+            <img src={phone.img} alt={phone.alt} />
           </div>
           <div>
-            <a href={`tel:${phone}`}>{phone}</a>
+            <a href={`tel:${phone.number}`}>{phone.number}</a>
           </div>
         </li>
         <li className="email logo">
           <div>
-            <img src={emailLogo} alt="email logo" />
+            <img src={email.img} alt={email.alt} />
           </div>
           <div>
-            <a href={`mailto:${email}`}>{email}</a>
+            <a href={`mailto:${email.mail}`}>{email.mail}</a>
           </div>
         </li>
         <li className="website  logo">
           <div>
-            <img src={websiteLogo} alt="website logo" />
+            <img src={website.img} alt={website.alt} />
           </div>
           <div>
-            <a href={website}>gabogarciam.dev</a>
+            <a href={website.url}>{website.name}</a>
           </div>
         </li>
         {profiles.map((item) => {
           return (
             <li className={`${item.network} logo`} key={item.network}>
               <div>
-                <img
-                  src={item.network === 'github' ? githubLogo : linkedinLogo}
-                  alt={`${item.network}logo`}
-                />
+                <img src={item.img} alt={item.alt} />
               </div>
               <div>
                 <a target="_blank" rel="noreferrer" href={item.url}>
@@ -67,9 +56,9 @@ const Contact = ({ email, phone, website, location, profiles }) => {
 };
 
 Contact.propTypes = {
-  email: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired,
-  website: PropTypes.string,
+  email: PropTypes.object.isRequired,
+  phone: PropTypes.object.isRequired,
+  website: PropTypes.object,
   location: PropTypes.object.isRequired,
   profiles: PropTypes.array,
 };
