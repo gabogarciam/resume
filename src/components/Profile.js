@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Profile.scss';
 
 const Profile = ({ name, label }) => {
   return (

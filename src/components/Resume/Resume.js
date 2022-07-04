@@ -4,14 +4,14 @@ import './Resume.scss';
 
 const Resume = () => {
   const Toggle = React.lazy(() => import('../Toggle'));
-  const Avatar = React.lazy(() => import('../Avatar/Avatar'));
-  const Profile = React.lazy(() => import('../Profile/Profile'));
-  const Skills = React.lazy(() => import('../Skills/Skills'));
-  const Languages = React.lazy(() => import('../Languages/Languages'));
-  const Contact = React.lazy(() => import('../Contact/Contact'));
-  const About = React.lazy(() => import('../About/About'));
-  const Experience = React.lazy(() => import('../Experience/Experience'));
-  const Education = React.lazy(() => import('../Education/Education'));
+  const Avatar = React.lazy(() => import('../Avatar'));
+  const Profile = React.lazy(() => import('../Profile'));
+  const Skills = React.lazy(() => import('../Skills'));
+  const Languages = React.lazy(() => import('../Languages'));
+  const Contact = React.lazy(() => import('../Contact'));
+  const About = React.lazy(() => import('../About'));
+  const Experience = React.lazy(() => import('../Experience'));
+  const Education = React.lazy(() => import('../Education'));
 
   const { basics, skills, languages, aboutMe, experience } = dataSchema;
 
@@ -20,7 +20,7 @@ const Resume = () => {
       <div className="container__resume">
         <aside className="resume__basics">
           <Toggle />
-          <Avatar />
+          <Avatar {...basics} />
           <Profile {...basics} />
           <Skills {...skills} />
           <Languages {...languages} />
