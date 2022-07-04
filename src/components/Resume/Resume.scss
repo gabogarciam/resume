@@ -1,4 +1,4 @@
-@import '../../variables';
+@import '../../styles/variables';
 
 .container__resume {
     display: flex;
@@ -36,10 +36,6 @@ h3 {
     margin: 17px 0;
 }
 
-a {
-    color: var(--text-color);
-}
-
 li {
     margin-bottom: 6px;
 }
@@ -48,9 +44,9 @@ li {
     margin: 0 auto;
     width: 40px;
     height: 40px;
-  }
+}
   
-  .loader:after {
+.loader:after {
     content: " ";
     display: block;
     width: 30px;
@@ -60,22 +56,18 @@ li {
     border: 5px solid rgb(42, 64, 158);
     border-color: rgb(59, 75, 184) transparent #fff transparent;
     animation: loader 1.2s linear infinite;
-  }
+}
   
-  @keyframes loader {
+@keyframes loader {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
 @media only screen and (max-width: 991px) {
-    body {
-        background-color: var(--container-basics)!important;
-    }
-
     .container__resume {
         display: block;
         width: auto;
@@ -85,7 +77,8 @@ li {
 
     .resume__basics {
         width: 100%;
-        background-color: transparent
+        background-color: transparent;
+        overflow: hidden;
     }
 
     .resume__main {
@@ -93,7 +86,6 @@ li {
         height: 100%;
         overflow: auto;
         padding: 30px;
-        background-color: transparent;
     }
 
     .resume__experience {
