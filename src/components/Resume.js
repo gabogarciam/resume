@@ -1,17 +1,16 @@
 import React, { Suspense } from 'react';
-import dataSchema from '../../schemas/Data';
-import './Resume.scss';
+import dataSchema from '../schemas/Data';
 
 const Resume = () => {
-  const Toggle = React.lazy(() => import('../Toggle'));
-  const Avatar = React.lazy(() => import('../Avatar'));
-  const Profile = React.lazy(() => import('../Profile'));
-  const Skills = React.lazy(() => import('../Skills'));
-  const Languages = React.lazy(() => import('../Languages'));
-  const Contact = React.lazy(() => import('../Contact'));
-  const About = React.lazy(() => import('../About'));
-  const Experience = React.lazy(() => import('../Experience'));
-  const Education = React.lazy(() => import('../Education'));
+  const Toggle = React.lazy(() => import('./Toggle'));
+  const Avatar = React.lazy(() => import('./Avatar'));
+  const Profile = React.lazy(() => import('./Profile'));
+  const Skills = React.lazy(() => import('./Skills'));
+  const Languages = React.lazy(() => import('./Languages'));
+  const Contact = React.lazy(() => import('./Contact'));
+  const About = React.lazy(() => import('./About'));
+  const Experience = React.lazy(() => import('./Experience'));
+  const Education = React.lazy(() => import('./Education'));
 
   const { basics, skills, languages, aboutMe, experience } = dataSchema;
 
