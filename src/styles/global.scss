@@ -12,6 +12,11 @@
     }
 }
 
+::selection {
+    background-color: #47a3f3;
+    color: #fefefe;
+}
+
 html {
     scroll-behavior: smooth;
     a { color: var(--text-color); }
@@ -27,6 +32,26 @@ body {
     &.dark {
         @include theme-colors($light-theme: false);
     }
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 1.8rem;
+    text-transform: uppercase;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.container__resume {
+    display: flex;
+    margin: auto;
+    width: 50rem;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 //resume__basics
@@ -63,16 +88,25 @@ body {
     }
 }
 
-.profile__name {
-    font-weight: 800;
-    font-size: var(--h1-font-size);
-    text-transform: uppercase;
-    padding: 20px 20px 0 20px;
-    line-height : 30px;
+.resume__profile {
+    text-align: center;
+
+    .profile__name {
+        font-weight: 800;
+        font-size: var(--h1-font-size);
+        text-transform: uppercase;
+        padding: 20px 20px 0 20px;
+        line-height : 30px;
+    }
+
+    .profile__label {
+        margin: 7px auto;
+    }
 }
 
-.profile__label {
-    margin: 7px auto;
+.resume__basics .basics {
+    text-align: justify;
+    padding: 15px 15px 0 20px;
 }
 
 .resume__skills {
@@ -113,17 +147,23 @@ body {
 }
 
 //resume__main
+.resume__main {
+    width: 100%;
+    background: var(--container-color);
+    padding: 3.1rem 1.8rem 1.8rem;
+    text-align: justify;
+}
+
 .resume__summary {
     font-size: var(--larger-font-size);
 }
 
-::selection {
-    background-color: #47a3f3;
-    color: #fefefe;
-}
-
 .work__experience, .education__experience, .position, .date {
     display: flex;
+}
+
+.work__experience, .education__experience {
+    margin: 17px 0;
 }
 
 .company {
@@ -182,4 +222,55 @@ body {
 
 .date li:last-child {
     margin-left: 10px;
+}
+
+//Loader
+.loader {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+  
+.loader:after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid rgb(42, 64, 158);
+    border-color: rgb(59, 75, 184) transparent #fff transparent;
+    animation: loader 1.2s linear infinite;
+}
+  
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    body.dark { box-shadow: none; }
+
+    .container__resume {
+        display: block;
+        width: auto;
+    }
+
+    .resume__basics {
+        width: 100%;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    .resume__main {
+        width: auto;
+        height: 100%;
+        overflow: auto;
+        padding: 30px;
+    }
+    
 }
