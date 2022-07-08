@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkresume=self.webpackChunkresume||[]).push([[887],{887:(e,r,a)=>{a.r(r),a.d(r,{default:()=>s});var t=a(294);const f=a.p+"59b55b94869f474f72b778ae1f32f545.webp",s=function(){return t.createElement("figure",{className:"image__profile"},t.createElement("img",{src:f,alt:"Avatar Profile"}))}}}]);
-//# sourceMappingURL=887.bundle.js.map
