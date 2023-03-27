@@ -1,2 +1,3 @@
-[![Build status](https://img.shields.io/github/workflow/status/gabogarciam/resume/Main)](https://github.com/gabogarciam/resume/actions)
+[![Build status](https://img.shields.io/github/actions/workflow/status/gabogarciam/resume/main.yml?branch=master)
+
 # resume project
