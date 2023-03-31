@@ -18,7 +18,7 @@ jobs:
     # if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - name: Display custom env variables
-        run: echo "The PR_URL is: $PR_URL"
+        run: echo "The PR_URL is $PR_UR"
 
       - name: Dependabot metadata
         id: dependabot-metadata
