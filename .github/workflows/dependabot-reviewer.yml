@@ -11,12 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PR_URL: ${{github.event.pull_request.html_url}}
-      github_token: ${{ secrets.REPO_BOT_TOKEN }}
+      github_token: ${{ github_token }}
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
-      - name: Display custom env variables
-        run: echo "The PR_URL is $PR_UR"
-
       - name: Dependabot metadata
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v1
