@@ -1,17 +1,20 @@
 name: Dependabot reviewer
 
-on: pull_request_target
+on:
+  pull_request:
+    branches: [ develop ]
+# on: pull_request_target
 
-permissions:
-  pull-requests: write
-  contents: write
+# permissions:
+#   pull-requests: write
+#   contents: write
 
 jobs:
   review-dependabot-pr:
     runs-on: ubuntu-latest
     env:
       PR_URL: ${{github.event.pull_request.html_url}}
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      GITHUB_TOKEN: ${{github.token}}
     # if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
@@ -19,9 +22,7 @@ jobs:
         uses: dependabot/fetch-metadata@v1
 
       - name: Display custom env variables
-        run: |
-          echo "The PR_URL is: $PR_URL"
-          echo "The GITHUB_TOKEN is: $GITHUB_TOKEN"
+        run: echo "The PR_URL is: $PR_URL"
 
       # - name: Enable auto-merge for Dependabot PRs
       #   run: gh pr merge --auto --merge "$PR_URL"
